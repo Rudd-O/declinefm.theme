@@ -26,12 +26,10 @@ setup(name='declinefm.theme',
       install_requires=[
           'setuptools',
           'plone.app.theming',
-          'plone.app.toolbar',
       ],
       extras_require={
           'test': [
               'plone.app.theming',
-              'plone.app.toolbar',
           ],
       },
       entry_points="""

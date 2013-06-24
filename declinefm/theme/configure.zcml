@@ -6,8 +6,6 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="declinefm.theme">
 
-  <five:registerPackage package="." initialize=".initialize" />
-
   <includeDependencies package="." />
 
   <plone:static
@@ -17,9 +15,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="declinefm.theme"
+      title="Decline to State"
       directory="profiles/default"
-      description="Installs the declinefm.theme package"
+      description="Installs the Decline to State theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
