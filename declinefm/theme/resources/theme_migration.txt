@@ -1,0 +1,29 @@
+THEME CREATION STEPS
+- create a theme distribution: bin/zopeskel plone declinefm.theme
+
+MIGRATION STEPS
+- uninstall flowplayer
+    - remove IAudio marker interfaces from every archive/object using repair.py (included in this folder)
+    - remove marker interfaces from all files and reset them layouts to file_view (also using repair.py)
+    - remove flowplayer views for types File, Link, Folder, Collection
+    - remove flowplayer browser layers
+    - remove these from /portal_tinymce/@@tinymce-controlpanel:
+        Video (left)|div|autoFlowPlayer video image-left
+        Video (right)|div|autoFlowPlayer video image-right
+        Video|div|autoFlowPlayer video
+        Audio (left)|div|autoFlowPlayer audio image-left
+        Audio (right)|div|autoFlowPlayer audio image-right
+        Audio|div|autoFlowPlayer audio
+    - in portal_properties remove flowplayer_properties
+    - deactivate collective.flowplayer
+    - remove activateFlowPlayerLayout script from site root
+    - clear & rebuild catalog
+    - remove flowplayer submodule entry from .git/config and .gitmodules
+    - remove .git/modules/src/collective.flowplayer
+- in buildout.cfg:
+    - add "declinefm.theme" to eggs
+    - add "src/declinefm.theme" to develop
+- on addons page, activate 
+    - "Diazo Theme Support"
+    - "Decline to State"
+- replace logo.png in portal_skins/custom with new logo

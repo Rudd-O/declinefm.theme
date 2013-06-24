@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`
+    
+    <rules>
+        <theme href="theme.html"/>
+
+        <before css:theme-children="head" css:content-children="head" />
+
+        <copy attributes="class" css:theme="html" css:content="html" />
+        <copy attributes="class" css:theme="body" css:content="body" />
+        
+        <drop css:theme="#logo" />
+        <strip css:content="#portal-top .cell" />
+        <drop css:content="#portal-searchbox .searchSection" />
+        <after css:theme="#icons" css:content-children="#portal-top" />
+    </rules>
+</rules>
