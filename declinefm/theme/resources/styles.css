@@ -122,7 +122,7 @@ ul#portal-globalnav li:last-child:after {
 #visual-portal-wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    width: 820px;
 }
 
 /* Header */
@@ -258,10 +258,6 @@ ul#portal-globalnav li:last-child:after {
     flex-flow: row;
 }
 
-##portal-column-content, #portal-column-one, #portal-column-two {
-#    display: table-cell;
-#}
-
 #portal-column-content {
     order: 1
 }
@@ -272,7 +268,7 @@ ul#portal-globalnav li:last-child:after {
     order: 2
 }
 
-#portal-column-content, #blog {
+#portal-column-content {
     background-color: #ffffff;
     padding-bottom: 30px;
     padding-left: 60px;
@@ -280,54 +276,33 @@ ul#portal-globalnav li:last-child:after {
     padding-top: 40px;
 }
 
-#portal-column-one {
-    background-color: #fcb016;
-    border-right: 20px solid #252525;
-    padding-bottom: 30px;
-    padding-left: 60px;
-    padding-right: 40px;
-    padding-top: 40px;
-}
-
-#portal-column-two {
-    background-color: #fcb016;
-    border-left: 20px solid #252525;
-    padding-bottom: 30px;
-    padding-left: 60px;
-    padding-right: 40px;
-    padding-top: 40px;
-}
-
-#latest {
-    display: table;
-}
-
-#latest .content {
-    display: table-cell;
-}
-
-#latest address, time {
+#portal-column-content address, time {
     display: inline;
 }
 
-#blog {
-    border-right: 20px solid #252525;
-    width: 522px;
-}
-
-#rightside {
-    width: 281px;
-}
-
-#show {
+#portal-column-one, #portal-column-two {
     background-color: #fcb016;
+    width: 100%;
+}
+
+#portal-column-one > *, #portal-column-two > * {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
     border-bottom: 20px solid #252525;
-    padding: 30px;
 }
 
-#news {
-    background-color: #fcb016;
-    padding: 30px;
+#portal-column-one > *:last-child, #portal-column-two > *:last-child {
+    border-bottom: none;
+}
+
+#portal-column-one {
+    border-right: 20px solid #252525;
+}
+
+#portal-column-two {
+    border-left: 20px solid #252525;
 }
 
 /* Footer */
@@ -335,7 +310,9 @@ ul#portal-globalnav li:last-child:after {
 #portal-footer {
     background-color: #a1a1a1;
     margin-bottom: 26px;
-    padding: 30px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 40px;
 }
 
 #cretinism-rapper {
