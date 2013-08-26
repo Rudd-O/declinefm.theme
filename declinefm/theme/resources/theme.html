@@ -15,19 +15,16 @@
                 </div>
 
                 <div id="logo">
+                    <div id="portal-searchbox"/>
+
                     <img src="logo.png" alt="Decline to State" />
-                    
-                    <form id="search">
-                        <input type="text"/>
-                        <input type="submit" value="Search"></input>
-                    </form>
                 </div>
             </header>
 
             <section id="splash">
                 <div>
                     <nav>
-                        <ul class="nav">
+                        <ul id="portal-globalnav">
                             <li><a href="#">Listen and chat live</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Archives</a></li>
@@ -48,128 +45,130 @@
                     </div>
                 </div>
             </section>
-            
-            <section id="live">
-                <div id="player">
-                    <header><h1>Currently Playing: Decline to State Radio</h1></header>
-                    
-                    <img src="play.png">
-                    <img src="pause.png">
-                </div>
-                <div id="info">
-                    <header><strong>Show #n | Jan 1, 1970</strong></header>
-        
-                    <div id="description">            
-                        Cupcake ipsum dolor sit amet jelly beans. Marzipan pie chocolate jelly-o dessert...
-                    </div>
-                </div>
-            </section>
-            
-            <section id="latest">
-                <div class="content" id="blog">
-                    <header>
-                        <h1 class="section-header">Latest Blog Posts</h1>
-                    </header>
-                    
-                    <ol id="posts-list">
-                        <li><article class="blog-post">
-                            <header>
-                                <h2 class="title">Blog Post 1 Title</h2>
-                                <address class="author">Author Name</address> | 
-                                <time class="pubdate" datetime="1970-01-01T00:00:00">0:00 Jan 1, 1970</time>
-                            </header>
-                            
-                            <div class="snippet">
-                                Cupcake ipsum dolor sit amet. Marshmallow sugar plum I love caramels
-                                gingerbread dragée gummi bears dragée faworki. Chocolate cake jelly-o oat cake
-                                lemon drops. Carrot cake I love cheesecake donut. Jelly beans apple pie wypas
-                                brownie icing marshmallow. Tootsie roll pie toffee.
-                            </div>
-                            
-                            <footer>
-                                <ul class="nav">
-                                    <li><a href="#">RSS</a></li>
-                                    <li><a href="#">Read</a></li>
-                                    <li><a href="#">More Blog Posts</a></li>
-                                </ul>
-                            </footer>
-                        </article></li>
-                        <hr />
+
+                <section id="live">
+                    <div id="player">
+                        <header><h1>Currently Playing: Decline to State Radio</h1></header>
                         
-                        <li><article class="blog-post">
+                        <img src="play.png">
+                        <img src="pause.png">
+                    </div>
+                    <div id="info">
+                        <header><strong>Show #n | Jan 1, 1970</strong></header>
+            
+                        <div id="description">            
+                            Cupcake ipsum dolor sit amet jelly beans. Marzipan pie chocolate jelly-o dessert...
+                        </div>
+                    </div>
+                </section>
+                
+            <div id="portal-columns">                
+                <section id="latest">
+                    <div class="content" id="blog">
+                        <header>
+                            <h1 class="section-header">Latest Blog Posts</h1>
+                        </header>
+                        
+                        <ol id="posts-list">
+                            <li><article class="blog-post">
+                                <header>
+                                    <h2 class="title">Blog Post 1 Title</h2>
+                                    <address class="author">Author Name</address> | 
+                                    <time class="pubdate" datetime="1970-01-01T00:00:00">0:00 Jan 1, 1970</time>
+                                </header>
+                                
+                                <div class="snippet">
+                                    Cupcake ipsum dolor sit amet. Marshmallow sugar plum I love caramels
+                                    gingerbread dragée gummi bears dragée faworki. Chocolate cake jelly-o oat cake
+                                    lemon drops. Carrot cake I love cheesecake donut. Jelly beans apple pie wypas
+                                    brownie icing marshmallow. Tootsie roll pie toffee.
+                                </div>
+                                
+                                <footer>
+                                    <ul class="nav">
+                                        <li><a href="#">RSS</a></li>
+                                        <li><a href="#">Read</a></li>
+                                        <li><a href="#">More Blog Posts</a></li>
+                                    </ul>
+                                </footer>
+                            </article></li>
+                            <hr />
+                            
+                            <li><article class="blog-post">
+                                <header>
+                                    <h2 class="title">Blog Post 2 Title</h2>
+                                    <address class="author">Author Name</address> | 
+                                    <time class="pubdate" datetime="1970-01-01T00:00:00">0:00 Jan 1, 1970</time>
+                                </header>
+                                
+                                <div class="snippet">
+                                    Jelly beans chocolate cake ice cream muffin. Toffee liquorice cheesecake
+                                    powder dessert gummi bears. Toffee dessert chocolate bar. Sweet roll danish
+                                    gingerbread brownie danish wafer chocolate cake tootsie roll. Liquorice apple
+                                    pie I love apple pie. Chocolate bar candy bear claw cake I love. Lollipop
+                                    faworki apple pie.
+                                </div>
+                                
+                                <footer>
+                                    <ul class="nav">
+                                        <li><a href="#">RSS</a></li>
+                                        <li><a href="#">Read</a></li>
+                                        <li><a href="#">More Blog Posts</a></li>
+                                    </ul>
+                                </footer>
+                            </article></li>
+                            <hr />
+                        </ol>
+                        
+                        <footer>More Blog Posts</footer>
+                    </div>
+                    
+                    <div class="content" id="rightside">
+                        <div id="show">
                             <header>
-                                <h2 class="title">Blog Post 2 Title</h2>
-                                <address class="author">Author Name</address> | 
-                                <time class="pubdate" datetime="1970-01-01T00:00:00">0:00 Jan 1, 1970</time>
+                                <h1 class="section-header">Latest Show</h1>
+                                <time class="pubdate" datetime="1970-01-01T00:00:00">Jan 1, 1970</time>
                             </header>
-                            
+                        
                             <div class="snippet">
-                                Jelly beans chocolate cake ice cream muffin. Toffee liquorice cheesecake
-                                powder dessert gummi bears. Toffee dessert chocolate bar. Sweet roll danish
-                                gingerbread brownie danish wafer chocolate cake tootsie roll. Liquorice apple
-                                pie I love apple pie. Chocolate bar candy bear claw cake I love. Lollipop
-                                faworki apple pie.
+                                Cupcake ipsum dolor sit amet croissant. Carrot cake muffin I love I love croissant
+                                marshmallow tiramisu cake gummies. Fruitcake cupcake topping faworki apple pie
+                                jelly beans soufflé liquorice carrot cake. I love brownie lollipop cookie jelly-o
+                                I love soufflé. Tart brownie candy canes sesame snaps I love cake.
                             </div>
-                            
+                        
                             <footer>
                                 <ul class="nav">
                                     <li><a href="#">RSS</a></li>
-                                    <li><a href="#">Read</a></li>
-                                    <li><a href="#">More Blog Posts</a></li>
+                                    <li><a href="#">Listen</a></li>
+                                    <li><a href="#">More Shows</a></li>
                                 </ul>
                             </footer>
-                        </article></li>
-                        <hr />
-                    </ol>
-                    
-                    <footer>More Blog Posts</footer>
-                </div>
-                
-                <div class="content" id="rightside">
-                    <div id="show">
-                        <header>
-                            <h1 class="section-header">Latest Show</h1>
-                            <time class="pubdate" datetime="1970-01-01T00:00:00">Jan 1, 1970</time>
-                        </header>
-                    
-                        <div class="snippet">
-                            Cupcake ipsum dolor sit amet croissant. Carrot cake muffin I love I love croissant
-                            marshmallow tiramisu cake gummies. Fruitcake cupcake topping faworki apple pie
-                            jelly beans soufflé liquorice carrot cake. I love brownie lollipop cookie jelly-o
-                            I love soufflé. Tart brownie candy canes sesame snaps I love cake.
                         </div>
                     
-                        <footer>
-                            <ul class="nav">
-                                <li><a href="#">RSS</a></li>
-                                <li><a href="#">Listen</a></li>
-                                <li><a href="#">More Shows</a></li>
-                            </ul>
-                        </footer>
-                    </div>
-                
-                    <div id="news">
-                        <header>
-                            <h1 class="section-header">Latest News</h1>
-                            <time class="pubdate" datetime="1970-01-01T00:00:00">Jan 1, 1970</time>
-                        </header>
-                    
-                        <div class="snippet">
-                            Cupcake ipsum dolor sit amet macaroon macaroon I love pudding. Wypas cotton candy
-                            cake halvah. Cake sugar plum I love. Jelly beans sweet roll jujubes. Soufflé candy
-                            canes candy tiramisu I love I love marshmallow tart.
+                        <div id="news">
+                            <header>
+                                <h1 class="section-header">Latest News</h1>
+                                <time class="pubdate" datetime="1970-01-01T00:00:00">Jan 1, 1970</time>
+                            </header>
+                        
+                            <div class="snippet">
+                                Cupcake ipsum dolor sit amet macaroon macaroon I love pudding. Wypas cotton candy
+                                cake halvah. Cake sugar plum I love. Jelly beans sweet roll jujubes. Soufflé candy
+                                canes candy tiramisu I love I love marshmallow tart.
+                            </div>
+                        
+                            <footer>
+                                <ul class="nav">
+                                    <li><a href="#">More News</a></li>
+                                </ul>
+                            </footer>
                         </div>
-                    
-                        <footer>
-                            <ul class="nav">
-                                <li><a href="#">More News</a></li>
-                            </ul>
-                        </footer>
-                    </div>
-                </div>                
-            </section>
+                    </div>                
+                </section>
+            </div> <!-- id="portal-columns" -->
             
-            <footer id="footer">
+            <footer id="portal-footer">
                 <section id="about">
                     <div id="mission">
                         <header>
@@ -197,9 +196,16 @@
                 </section>
                 
                 <hr />
-                
-                <div id="credits">
-                    Web design by Jason Kiesling Creative
+
+                <div id="cretinism-rapper">
+                    <ul id="portal-siteactions">
+                        <li>one</li>
+                        <li>sitemap</li>
+                    </ul>                
+
+                    <div id="credits">
+                        Web design by Jason Kiesling Creative
+                    </div>
                 </div>
             </footer>
         </div>
