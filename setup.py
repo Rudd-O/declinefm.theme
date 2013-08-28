@@ -29,7 +29,7 @@ setup(name='declinefm.theme',
       ],
       extras_require={
           'test': [
-              'plone.app.theming',
+              'plone.app.testing',
           ],
       },
       entry_points="""
