@@ -15,7 +15,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Decline to State"
+      title="Decline to State theme"
       directory="profiles/default"
       description="Installs the Decline to State theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"

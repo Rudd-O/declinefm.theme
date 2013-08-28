@@ -15,7 +15,7 @@
 
         <theme href="theme.html" />
 
-        <before css:theme-children="head" css:content-children="head" />
+        <replace css:theme="head" css:content="head" />
 
         <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
 
