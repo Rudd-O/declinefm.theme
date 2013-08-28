@@ -9,7 +9,10 @@
     <xsl:variable name="sectionnews" css:select="body.section-news"/>
     <xsl:variable name="sectionlive" css:select="body.section-live"/>
 
-    <rules>
+    <rules css:if-content="#visual-portal-wrapper">
+    <!-- above selector is necessary because some pages like dialogs
+         do not carry this wrapper and we do not want to theme them at all -->
+
         <theme href="theme.html" />
 
         <before css:theme-children="head" css:content-children="head" />
