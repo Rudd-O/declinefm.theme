@@ -10,6 +10,7 @@
   <includeDependencies package="." />
 
   <cmf:registerDirectory name="declinefm_css_overrides"/>
+  <cmf:registerDirectory name="declinefm_images"/>
 
   <plone:static
       directory="resources"

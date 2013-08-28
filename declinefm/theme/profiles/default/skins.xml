@@ -7,8 +7,17 @@
     meta_type="Filesystem Directory View"
     directory="declinefm.theme:skins/declinefm_css_overrides"/>
 
+ <object name="declinefm_images"
+    meta_type="Filesystem Directory View"
+    directory="declinefm.theme:skins/declinefm_images"/>
+
  <skin-path name="*">
   <layer name="declinefm_css_overrides"
+     insert-after="custom"/>
+ </skin-path>
+
+ <skin-path name="*">
+  <layer name="declinefm_images"
      insert-after="custom"/>
  </skin-path>
 
