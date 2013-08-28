@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
@@ -7,6 +8,8 @@
     i18n_domain="declinefm.theme">
 
   <includeDependencies package="." />
+
+  <cmf:registerDirectory name="declinefm_css_overrides"/>
 
   <plone:static
       directory="resources"

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- This file holds the setup configuration for the portal_skins tool -->
+
+<object name="portal_skins">
+
+ <object name="declinefm_css_overrides"
+    meta_type="Filesystem Directory View"
+    directory="declinefm.theme:skins/declinefm_css_overrides"/>
+
+ <skin-path name="*">
+  <layer name="declinefm_css_overrides"
+     insert-after="custom"/>
+ </skin-path>
+
+</object>
