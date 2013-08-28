@@ -1,6 +1,3 @@
-THEME CREATION STEPS
-- create a theme distribution: bin/zopeskel plone declinefm.theme
-
 MIGRATION STEPS
 - uninstall flowplayer
     - remove IAudio marker interfaces from every archive/object using repair.py (included in this folder)
@@ -21,9 +18,9 @@ MIGRATION STEPS
     - remove flowplayer submodule entry from .git/config and .gitmodules
     - remove .git/modules/src/collective.flowplayer
 - in buildout.cfg:
-    - add "declinefm.theme" to eggs
-    - add "src/declinefm.theme" to develop
+    - add "declinefm.theme" and the policy package to eggs
+    - add "src/declinefm.theme" and the policy package to develop
+    - check out the relevant projects in src/
 - on addons page, activate 
     - "Diazo Theme Support"
-    - "Decline to State"
-- replace logo.png in portal_skins/custom with new logo
+    - "Decline to State theme" and policy package
