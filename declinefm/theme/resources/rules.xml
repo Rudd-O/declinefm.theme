@@ -55,6 +55,8 @@
                  css:theme="#posts-list"
                  css:content="#content-core dl"
           />
+          <replace css:theme="#portal-column-one" css:content="#portal-column-one" />
+          <replace css:theme="#portal-column-two" css:content="#portal-column-two" />
         </rules>
 
         <rules css:if-not-content=".portaltype-plone-site.template-custom_frontpage_view">
