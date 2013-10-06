@@ -48,8 +48,7 @@
         <rules css:if-content=".portaltype-plone-site.template-custom_frontpage_view">
           <replace
                  css:theme-children="#splash-text"
-                 css:content="#content-core"
-                 href="/front-page-elements/splash"
+                 css:content-children="#splash-text"
           />
           <replace
                  css:theme="#posts-list"
