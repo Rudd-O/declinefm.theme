@@ -19,15 +19,19 @@
 
         <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
 
+        <rules css:if-content="#mission">
         <replace
                css:theme-children="#mission"
                css:content-children="#mission"
         />
+        </rules>
 
+        <rules css:if-content="#social">
         <replace
                css:theme-children="#social"
                css:content-children="#social"
         />
+        </rules>
 
         <copy attributes="class" css:theme="html" css:content="html" />
         <copy attributes="class" css:theme="body" css:content="body" />

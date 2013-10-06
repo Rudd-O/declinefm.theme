@@ -1,6 +1,0 @@
-    <div id="social">
-      <div tal:define="text python:view.social.getText() or ''"
-         tal:condition="text">
-        <div tal:replace="structure text">The social</div>
-      </div>
-    </div>

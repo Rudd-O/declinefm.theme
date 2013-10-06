@@ -1,6 +1,0 @@
-    <div id="splash-text">
-      <div tal:define="text python:view.splash_text.getText() or ''"
-         tal:condition="text">
-        <div tal:replace="structure text">The splash</div>
-      </div>
-    </div>
