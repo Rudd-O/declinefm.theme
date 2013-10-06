@@ -2,6 +2,8 @@
 <object>
   <order manager="plone.portalfooter" skinname="Decline to State theme"
          based-on="Sunburst">
-    <viewlet name="declinefm.credits" insert-before="plone.colophon" />
+    <viewlet name="declinefm.splash" insert-before="plone.colophon" />
+    <viewlet name="declinefm.mission" insert-before="plone.colophon" />
+    <viewlet name="declinefm.social" insert-before="plone.colophon" />
   </order>
 </object>
