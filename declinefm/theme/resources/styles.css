@@ -169,7 +169,7 @@ ul#portal-globalnav li:last-child:after {
     text-align: right;
 }
 
-.portaltype-plone-site.template-folder_listing #splash {
+.portaltype-plone-site.template-custom_frontpage_view #splash {
     background: url("banner-transparent.png");
     background-position: bottom left;
     background-repeat: no-repeat;

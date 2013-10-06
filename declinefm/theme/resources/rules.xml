@@ -45,7 +45,7 @@
 
         <append css:theme="body" css:content="body script" />
 
-        <rules css:if-content=".portaltype-plone-site.template-folder_listing">
+        <rules css:if-content=".portaltype-plone-site.template-custom_frontpage_view">
           <replace
                  css:theme-children="#splash-text"
                  css:content="#content-core"
@@ -54,11 +54,10 @@
           <replace
                  css:theme="#posts-list"
                  css:content="#content-core dl"
-                 href="/blog"
           />
         </rules>
 
-        <rules css:if-not-content=".portaltype-plone-site.template-folder_listing">
+        <rules css:if-not-content=".portaltype-plone-site.template-custom_frontpage_view">
 
           <replace css:theme="#portal-columns" css:content="#portal-columns" />
           <drop css:theme="#splash-text" />

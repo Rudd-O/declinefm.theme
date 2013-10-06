@@ -5,6 +5,7 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="declinefm.theme">
 
   <includeDependencies package="." />
@@ -23,6 +24,12 @@
       directory="profiles/default"
       description="Installs the Decline to State theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <browser:page
+      name="custom_frontpage_view"
+      for="*"
+      permission="zope2.View"
+      class=".custom_frontpage_view.CustomFrontpageView"
       />
   <!-- -*- extra stuff goes here -*- -->
   
