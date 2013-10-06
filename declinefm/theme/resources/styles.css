@@ -1,5 +1,93 @@
-@import url("reset.css");
-@import url("structural_overrides.css");
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Structural Overrides */
+
+/* Hide elements whose markup we don't want to eliminate for Google purposes */
+
+#portal-globalnav {
+    display: none;
+}
+
+/* Hide elements that are supposed to be invisible. */
+/* from base.css */
+
+.hiddenStructure {
+    display: block;
+    background: transparent;
+    background-image: none; /* safari bug */
+    border: none;
+    height: 0.1em;
+    overflow: hidden;
+    padding: 0;
+    margin: -0.1em 0 0 -0.1em;
+    width: 1px;
+}
+/* ensures hidden elements don't take up space */
+/* .ie6 is set on <html> by Modernizr library */
+.ie6 .hiddenStructure,
+.ie7 .hiddenStructure {
+    position: absolute;
+}
+
+#content .visualNoMarker {
+    list-style:none;
+    margin-left: 0;
+}
+
+.visualClear {
+    clear: both;
+}
+/* end structural overrides */
 
 @font-face {
     font-family: "Gotham Book";
@@ -303,6 +391,22 @@ ul#portal-globalnav li:last-child:after {
 
 #portal-column-two {
     border-left: 20px solid #252525;
+}
+
+dt .summary {
+    font-family: "DINPro Black";
+    font-weight: 400;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+dt .summary a {
+    text-decoration: none;
+}
+
+dd .description {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /* Footer */
