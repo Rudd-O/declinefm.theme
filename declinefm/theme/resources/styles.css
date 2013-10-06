@@ -221,11 +221,13 @@ ul#portal-globalnav li:last-child:after {
 }
 
 #portal-top #portal-logo {
+    display: block;
     margin: 0;
 }
 
 #icons {
     text-align: right;
+    float: right;
 }
 
 #logo {
@@ -244,6 +246,7 @@ ul#portal-globalnav li:last-child:after {
 
 #portal-searchbox {
     float: right;
+    clear: both;
 }
 
 #portal-searchbox input[type="text"] {
@@ -424,26 +427,26 @@ dd .description {
     width: 100%;
 }
 
-#portal-siteactions {
+#portal-siteactions, #portal-personaltools {
     display: table-cell;
 }
 
-ul#portal-siteactions {
+ul#portal-siteactions, ul#portal-personaltools {
     display: inline;
     list-style: none; 
     margin: 0 auto; 
 } 
 
-ul#portal-siteactions li {
+ul#portal-siteactions li, ul#portal-personaltools li {
     display: inline; 
     margin: 0;
 }
 
-ul#portal-siteactions a {
+ul#portal-siteactions a, ul#portal-personaltools a{
     display: inline;
 }
 
-ul#portal-siteactions li:after {
+ul#portal-siteactions li:after, ul#portal-personaltools li:before {
     content: " | ";
 }
 

@@ -19,6 +19,13 @@
 
         <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
 
+        <drop css:content="#portal-personaltools"/>
+        <before method="raw"
+            css:theme="#portal-personaltools"
+            css:content="#portal-personaltools"
+        />
+        <drop css:theme="#portal-personaltools"/>
+
         <rules css:if-content="#mission">
         <replace
                css:theme-children="#mission"
@@ -43,7 +50,12 @@
         <drop css:content="#portal-searchbox .searchSection" />
         <after css:theme="#icons" css:content-children="#portal-top" />
 
-        <replace css:theme="#portal-globalnav" css:content="#portal-globalnav" />
+        <drop css:content="#portal-globalnav"/>
+        <before method="raw"
+            css:theme="#portal-globalnav"
+            css:content="#portal-globalnav"
+        />
+        <drop css:theme="#portal-globalnav"/>
 
         <append css:theme="body" css:content="body script" />
 
