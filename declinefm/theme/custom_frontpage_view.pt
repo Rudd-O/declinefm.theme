@@ -26,19 +26,6 @@
         <div metal:define-slot="inside" tal:replace="structure text">The body</div>
     </div>
 
-    <div id="splash-text">
-      <div metal:define-macro="splash-field-view"
-         id="parent-fieldname-splash" class="stx"
-         tal:define="kss_class python:getKssClasses('splash',
-                     templateId=templateId, macro='splash-field-view');
-                     text python:view.splash_text.getText() or ''"
-         tal:condition="text"
-         tal:attributes="class python:view.splash_text.Format() in ('text/structured',
-                                               'text/x-rst', ) and 'stx' + kss_class or 'plain' + kss_class">
-        <div metal:define-slot="inside" tal:replace="structure text">The splash</div>
-      </div>
-    </div>
-
     <metal:listingmacro define-macro="listing">
     <tal:foldercontents define="contentFilter contentFilter|request/contentFilter|nothing;
                               contentFilter python:contentFilter and dict(contentFilter) or {};

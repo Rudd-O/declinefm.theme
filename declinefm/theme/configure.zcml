@@ -10,6 +10,8 @@
 
   <includeDependencies package="." />
 
+  <include package=".browser" />
+
   <cmf:registerDirectory name="declinefm_css_overrides"/>
   <cmf:registerDirectory name="declinefm_images"/>
 

@@ -1,0 +1,6 @@
+    <div id="mission">
+      <div tal:define="text python:view.mission.getText() or ''"
+         tal:condition="text">
+        <div tal:replace="structure text">The mission</div>
+      </div>
+    </div>

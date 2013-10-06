@@ -21,4 +21,6 @@
      insert-after="custom"/>
  </skin-path>
 
+ <skin-path name="Decline to State theme" based-on="Sunburst" />
+
 </object>

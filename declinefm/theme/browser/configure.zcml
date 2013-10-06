@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="declinefm.theme">
+
+  <browser:viewlet
+      name="declinefm.splash"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.SplashViewlet"
+      permission="zope2.View"
+      />
+  <browser:viewlet
+      name="declinefm.mission"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.MissionViewlet"
+      permission="zope2.View"
+      />
+  <browser:viewlet
+      name="declinefm.social"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.SocialViewlet"
+      permission="zope2.View"
+      />
+
+</configure>
