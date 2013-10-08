@@ -1,6 +1,6 @@
 MIGRATION STEPS
 - uninstall flowplayer
-    - remove IAudio marker interfaces from every archive/object using repair.py (included in this folder)
+    - remove IAudio marker interfaces from every archive/object using repair.py / repair2.py (included in this folder)
     - remove marker interfaces from all files and reset them layouts to file_view (also using repair.py)
     - remove flowplayer views for types File, Link, Folder, Collection
     - remove flowplayer browser layers
